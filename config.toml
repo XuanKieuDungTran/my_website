@@ -92,8 +92,8 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "Aliquam"
-      subtitle = "Ipsum Dolor Sit Amet"
+      title = "My Project 1 title"
+      subtitle = "What is the question I address?"
       image = "pic01.jpg"
       url = "blogs/aliquam"
 
@@ -178,34 +178,34 @@ disqusShortname = ""
     title = "Phone"
     phone = "(+44) 74959 49531"
 
-    #[[params.contact.address]]
+    [[params.contact.address]]
     #title = "Address"
     #street = "Street"
     #city = "City, ST 00000"
     #country = "Country"
 
   # Footer section
-  #[params.footer]
+  [params.footer]
    # enable = true
     #copyright = "Company Name"
 
     # Uses font awesome icons
-   # [[params.footer.social]]
+   [[params.footer.social]]
      # icon = "fa-twitter"
      # url= "https://www.twitter.com"
       #label = "Twitter"
 
-   # [[params.footer.social]]
+   [[params.footer.social]]
       icon = "fa-facebook"
       url= "https://www.facebook.com/dzung.tran.x.k"
       label = "Facebook"
 
-   # [[params.footer.social]]
+   [[params.footer.social]]
      # icon = "fa-instagram"
     #  url= "https://www.instagram.com"
      # label = "Instagram"
     
-   # [[params.footer.social]]
+   [[params.footer.social]]
       icon = "fa-github"
       url= "https://www.github.com/XuanKieuDungTran"
       label = "GitHub"
