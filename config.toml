@@ -98,7 +98,7 @@ disqusShortname = ""
       url = "blogs/aliquam"
 
     [[params.tiles.showcase]]
-      title = "Tempus"
+      title = "GDP Comparisons"
       subtitle = "Feugiat Amet Tempus"
       image = "GDP_plot3.jpg"
       url = "projects/Project 2"
