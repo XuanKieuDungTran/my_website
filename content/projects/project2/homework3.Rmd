@@ -5,7 +5,7 @@ description: GDP Comparisons between Vietnam, China, and the UK
 draft: no
 image: GDP_plot3.jpg
 keywords: ''
-slug: homework3
+slug: GDP Comparisons
 categories:
 - ''
 - ''

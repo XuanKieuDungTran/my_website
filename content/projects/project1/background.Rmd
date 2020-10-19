@@ -5,7 +5,7 @@ description: About me
 draft: no
 image: haiphong.jpg
 keywords: ''
-slug: background
+slug: Biography
 categories:
 - ''
 - ''

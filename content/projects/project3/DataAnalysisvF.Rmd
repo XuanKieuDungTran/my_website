@@ -5,7 +5,7 @@ description: Analysis of Merger Arbitrage
 draft: no
 image: stock.jpg
 keywords: ''
-slug: InvestmentStrategy
+slug: Invesment Fundamentals
 categories:
 - ''
 - ''
