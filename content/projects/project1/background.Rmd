@@ -1,7 +1,7 @@
 ---
-title: "GDP Comparisons"
+title: "Background and Education"
 date: '2020-10-01T21:28:43-05:00'
-description: GDP Comparisons between Vietnam, China, and the UK
+description: About me
 draft: no
 image: haiphong.jpg
 keywords: ''

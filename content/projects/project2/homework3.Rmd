@@ -45,7 +45,7 @@ library(openintro)
 library(tidyquant)
 ```
 
-GDP growth is of utmost important to the prosperity of developing countries such as mine, Vietnam. Thus, for years the topic remains a core component of Vietnamese economic analysis. Thus, in this page I want to do my part, and attempt to construct a plot portray the changes in Vietnamese GDP components, compared to China and the United Kingdom. 
+GDP growth is of utmost important to the prosperity of developing countries such as mine, Vietnam. For years the topic remains a core component of Vietnamese economic analysis. Thus, in this page I want to do my part, and attempt to construct a plot portraying changes GDP components of Vietnam in the last 5 decades, compared to China and the United Kingdom. 
 
 I have chosen China for comparison because the majority of Vietnamese economic policies in the last few decades have been based on that of China. Hence, Vietnamese economic trends are expected to mirror its neighbouring country.
 
@@ -172,7 +172,7 @@ knitr::include_graphics(here::here("GDP_plot3.jpG"), error = FALSE)
 ```
 
 
-Analysis
+**Analysis**
 
 As Vietnam and China both experienced rapid growth at around the same time, their economic trends have been similar: fluctuating net exports, stable government spending, falling household expenditure, and growing business investment (all relative to GDP).  Net exports has been fluctuating because both its drivers are large and volatile: high internal demands for imports of luxury and capital goods, as well as huge external demands for their exports of low-cost consumer goods. The latter is also the main factor prompting the observed trend of rocketing business investments. Meanwhile, stable government expenditure can be credited to their politically stability, coherent economic objectives, and distinctly centralised governments. Finally, declining consumption can be explained by their rocketing income per capita, and distinctive cultural characteristics which encourage a high marginal propensity to save.
 
