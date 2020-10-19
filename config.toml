@@ -67,14 +67,14 @@ disqusShortname = ""
     #    url = "UrlOfLink"
 
     # Button Style 1
-    [[params.navigation.button1]]
-      name = "Get Started"
-      url = "blogs"
+  #  [[params.navigation.button1]]
+     # name = "Get Started"
+    #  url = "blogs"
 
     # Button Style 2
-    [[params.navigation.button2]]
-      name = "Log In"
-      url = "#"
+   # [[params.navigation.button2]]
+    #  name = "Log In"
+     # url = "#"
 
 
   # Banner section
@@ -104,13 +104,13 @@ disqusShortname = ""
       url = "projects/project2/homework3"
 
     [[params.tiles.showcase]]
-      title = "Invesment Fundamentals"
-      subtitle = "M&A Project"
+      title = "M&A Investment Strategy"
+      subtitle = "Investment Strategy Project"
       image = "stock.jpg"
       url = "projects/project3/DataAnalysisvF"
 
     [[params.tiles.showcase]]
-      title = "AirBnB Price Analysis"
+        title = "AirBnB Price Analysis"
       subtitle = "for Mexico city"
       image = "logo.jpg"
       url = "projects/project4/Airbnb2"

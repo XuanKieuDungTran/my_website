@@ -4,6 +4,7 @@ categories:
 - ""
 date: '2020-10-01T21:28:43-05:00'
 description:  "About me"
+draft: false
 image: haiphong.jpg
 keywords: ""
 slug: background
