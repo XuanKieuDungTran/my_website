@@ -92,8 +92,8 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "My Project 1 title"
-      subtitle = "What is the question I address?"
+      title = "Biography"
+      subtitle = "Background and Education"
       image = "pic01.jpg"
       url = "blogs/aliquam"
 
@@ -101,25 +101,25 @@ disqusShortname = ""
       title = "GDP Comparisons"
       subtitle = "Feugiat Amet Tempus"
       image = "GDP_plot3.jpg"
-      url = "projects/Project 2"
+      url = "projects/project2"
 
     [[params.tiles.showcase]]
-      title = "Magna"
-      subtitle = "Lorem Etiam Nullam"
+      title = "Invesment Fundamentals"
+      subtitle = "M&A Project"
       image = "pic03.jpg"
       url = "blogs/magna"
 
     [[params.tiles.showcase]]
-      title = "Ipsum"
-      subtitle = "Nisl Sed Aliquam"
+      title = "AirBnB Price Analysis"
+      subtitle = "for Mexico city"
       image = "pic04.jpg"
       url = "blogs/ipsum"
 
-    [[params.tiles.showcase]]
-      title = "Consequat"
-      subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic05.jpg"
-      url = "blogs/ipsum"
+    #[[params.tiles.showcase]]
+     # title = "Consequat"
+      #subtitle = "Ipsum Dolor Sit Amet"
+      #image = "pic05.jpg"
+      #url = "blogs/ipsum"
 
     [[params.tiles.showcase]]
       title = "Etiam"
