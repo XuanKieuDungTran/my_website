@@ -1,0 +1,55 @@
+---
+title: "GDP Comparisons"
+date: '2020-10-01T21:28:43-05:00'
+description: GDP Comparisons between Vietnam, China, and the UK
+draft: no
+image: haiphong.jpg
+keywords: ''
+slug: background
+categories:
+- ''
+- ''
+---
+
+# Background
+
+**Name:** Xuan Kieu Dung TRAN
+
+**DOB:** 08/08/1998
+
+**Place of birth:** *Hai Phong*, Vietnam
+
+Here is a picture of hometown city. However, it definitely did not look like this when I was still living there :D
+
+
+
+
+```{r, echo=FALSE}
+knitr::include_graphics(here::here("content/projects/project1", "haiphong.jpg"), error = FALSE)
+```
+
+
+
+**Permanent home:** *Hanoi*, Vietnam
+
+**Current address:** *Waterloo*, *London*, UK
+
+
+
+# Education
+
+**Secondary School:** IGCSE(7 A*), Singapore International School, Hanoi, Vietnam
+
+**Further Education:** A Levels (A* A* A* A*), Concord College, Shrewsbury, UK
+
+**Higher Education:** BSc Economics (Upper Second Class Honours), London School of Economics and Political Science, London, UK
+
+**Postgraduate Education:** Masters in Financial Analysis (current), London Business School, London, UK
+
+Yeah, I really love London...
+
+```{r, echo=FALSE}
+knitr::include_graphics(here::here("content/projects/project1", "london.jpg"), error = FALSE)
+```
+
+*I even live right next to London Eye...*

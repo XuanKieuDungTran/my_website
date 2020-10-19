@@ -95,7 +95,7 @@ disqusShortname = ""
       title = "Biography"
       subtitle = "Background and Education"
       image = "pic01.jpg"
-      url = "blogs/aliquam"
+      url = "projecs/project1/background"
 
     [[params.tiles.showcase]]
       title = "GDP Comparisons"
