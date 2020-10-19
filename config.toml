@@ -48,12 +48,12 @@ disqusShortname = ""
       url = "#"
 
     [[params.navigation.links]]
-      name = "Projects"
-      url = "projects"
+      name = "About me"
+      url = "projects/project1/homework3"
 
     [[params.navigation.links]]
-      name = "Generic Blog"
-      url = "blogs/ipsum"
+      name = "Projects"
+      url = "projects"
 
   #  [[params.navigation.links]]
    #   name = "Elements"
@@ -94,7 +94,7 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "Biography"
       subtitle = "Background and Education"
-      image = "pic01.jpg"
+      image = "haiphong.jpg"
       url = "projects/project1/background"
 
     [[params.tiles.showcase]]
@@ -106,13 +106,13 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "Invesment Fundamentals"
       subtitle = "M&A Project"
-      image = "pic03.jpg"
+      image = "stock.jpg"
       url = "projects/project3/DataAnalysisvF"
 
     [[params.tiles.showcase]]
       title = "AirBnB Price Analysis"
       subtitle = "for Mexico city"
-      image = "pic04.jpg"
+      image = "logo.jpg"
       url = "projects/project4/Airbnb2"
 
     #[[params.tiles.showcase]]

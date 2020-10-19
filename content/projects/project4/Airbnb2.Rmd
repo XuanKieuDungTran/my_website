@@ -1037,11 +1037,13 @@ model_prediction <-
   
   # convert from log to USD values
   mutate(price = exp(fit),
-         CI_lower = exp(lwr),
-         CI_upper = exp(upr)) %>%
+         CI_lower1 = exp(lwr),
+         CI_upper2 = exp(upr),
+         CI_lower = sprintf("%.2f", CI_lower1, na.rm = TRUE),
+         CI_upper = sprintf("%.2f", CI_upper2, na.rm = TRUE)) %>%
   
   # Remove unwanted columns
-  select(-fit, -lwr, -upr)
+  select(price, CI_lower, CI_upper)
 
 #Show result
 model_prediction
