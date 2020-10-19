@@ -49,7 +49,7 @@ disqusShortname = ""
 
     [[params.navigation.links]]
       name = "About me"
-      url = "projects/project1/background"
+      url = "projects/background"
 
     [[params.navigation.links]]
       name = "Projects"
@@ -95,25 +95,25 @@ disqusShortname = ""
       title = "Biography"
       subtitle = "Background and Education"
       image = "haiphong.jpg"
-      url = "projects/project1/background"
+      url = "projects/background"
 
     [[params.tiles.showcase]]
       title = "GDP Comparisons"
       subtitle = "Between Vietnam, China, and the UK"
       image = "GDP_plot3.jpg"
-      url = "projects/project2/homework3"
+      url = "projects/homework3"
 
     [[params.tiles.showcase]]
       title = "M&A Investment Strategy"
       subtitle = "Investment Strategy Project"
       image = "stock.jpg"
-      url = "projects/project3/DataAnalysisvF"
+      url = "projects/DataAnalysisvF"
 
     [[params.tiles.showcase]]
         title = "AirBnB Price Analysis"
       subtitle = "for Mexico city"
       image = "logo.jpg"
-      url = "projects/project4/Airbnb2"
+      url = "projects/Airbnb2"
 
     #[[params.tiles.showcase]]
      # title = "Consequat"
