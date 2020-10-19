@@ -1,14 +1,14 @@
 ---
-categories:
-- ""
-- ""
+title: "GDP Comparisons"
 date: '2020-10-01T21:28:43-05:00'
-description: "GDP Comparisons between Vietnam, China, and the UK"
-draft: false
+description: GDP Comparisons between Vietnam, China, and the UK
+draft: no
 image: GDP_plot3.jpg
-keywords: ""
+keywords: ''
 slug: homework3
-title: GDP Comparisons
+categories:
+- ''
+- ''
 ---
 
 
@@ -29,7 +29,7 @@ knitr::opts_chunk$set(
 ```
 
 
-```{r load-libraries, include = FALSE}}
+```{r load-libraries, include = FALSE}
 library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
 library(mosaic)
 library(ggthemes)
@@ -164,7 +164,9 @@ ggsave("GDP_plot3.jpg",
        width = 33, 
        height = 18, 
        units = "cm")
+```
 
+```{r display}
 # Display plot
 knitr::include_graphics(here::here("GDP_plot3.jpG"), error = FALSE)
 ```
