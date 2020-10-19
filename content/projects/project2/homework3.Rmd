@@ -9,6 +9,9 @@ image: GDP_plot3.jpg
 keywords: ""
 slug: homework3
 title: GDP Comparisons
+output:
+  html_document: 
+    css: hcm.css
 ---
 
 
@@ -45,9 +48,12 @@ library(openintro)
 library(tidyquant)
 ```
 
-GDP growth is of utmost important to the prosperity of developing countries such as mine, Vietnam. For years the topic remains a core component of Vietnamese economic analysis. Thus, in this page I want to do my part, and attempt to construct a plot portraying changes GDP components of Vietnam in the last 5 decades, compared to China and the United Kingdom. 
 
-I have chosen China for comparison because the majority of Vietnamese economic policies in the last few decades have been based on that of China. Hence, Vietnamese economic trends are expected to mirror its neighbouring country.
+
+
+**GDP growth is of utmost important to the prosperity of developing countries such as mine, Vietnam. For years the topic remains a core component of Vietnamese economic analysis. Thus, in this page I want to do my part, and attempt to construct a plot portraying changes GDP components of Vietnam in the last 5 decades, compared to China and the United Kingdom.** 
+
+**I have chosen China for comparison because the majority of Vietnamese economic policies in the last few decades have been based on that of China. Hence, Vietnamese economic trends are expected to mirror its neighbouring country.**
 
 
 

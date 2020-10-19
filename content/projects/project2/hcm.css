@@ -1,0 +1,10 @@
+body {
+  background-image: url('hcm.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div {
+  background-color: rgba(179, 153, 255, 0.55)   /* 35% opaque white */;
+  padding: 0.25em;
+}

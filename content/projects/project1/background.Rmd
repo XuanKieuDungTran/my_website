@@ -9,6 +9,9 @@ slug: background
 categories:
 - ''
 - ''
+output:
+  html_document: 
+    css: doson.css
 ---
 
 
@@ -18,18 +21,7 @@ categories:
 
 **DOB:** 08/08/1998
 
-**Place of birth:** *Hai Phong*, Vietnam
-
-Here is a picture of hometown city. However, it definitely did not look like this when I was still living there :D
-
-
-
-
-```{r, echo=FALSE}
-knitr::include_graphics(here::here("content/projects/project1", "haiphong.jpg"), error = FALSE)
-```
-
-
+**Place of birth:** *Hai Phong*, Vietnam *(See background photo)*
 
 **Permanent home:** *Hanoi*, Vietnam
 

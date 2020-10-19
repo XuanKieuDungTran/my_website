@@ -1,11 +1,11 @@
 ---
 title: "Airbnb Price Analysis"
-date: '2020-10-01T21:28:43-05:00'
+date: "sys.time"
 description: Airbnb Mexico City - Price analysis
 draft: no
 image: logo.jpg
 keywords: ''
-slug: background
+slug: airbnb
 categories:
 - ''
 - ''

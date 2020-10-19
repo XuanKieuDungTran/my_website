@@ -1,0 +1,10 @@
+body {
+  background-image: url('doson.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div {
+  background-color: rgba(153, 255, 153, 0.25)   /* 35% opaque white */;
+  padding: 0.25em;
+}

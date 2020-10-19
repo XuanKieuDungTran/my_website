@@ -9,6 +9,9 @@ image: stock.jpg
 keywords: ""
 slug: DataAnalysisvF
 title: Investment Strategy Project
+output: 
+  html_document:
+    css: financialbackground.css
 ---
 
 

@@ -9,6 +9,9 @@ image: logo.jpg
 keywords: ""
 slug: airbnb
 title: Airbnb Price Analysis
+output:
+  html_document: 
+    css: mexbackground.css
 ---
 
 ```{r, setup, include=FALSE}
@@ -57,7 +60,7 @@ library(car)
 ```
 
 
-This is a project where my group tried to model Airbnb prices in Mexico city using multivariate regressions.
+**This is a project where my group tried to model Airbnb prices in Mexico city using multivariate regressions.**
 
 ```{r vroom}
 listings <- vroom("http://data.insideairbnb.com/mexico/df/mexico-city/2020-06-20/data/listings.csv.gz")

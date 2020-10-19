@@ -5,7 +5,7 @@ title = "Portfolio website for Xuan Kieu Dung Tran"
 theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
+googleAnalytics = "UA-180750162-1"
 
 # Enter your disqus shortname to enable comments
 disqusShortname = ""
@@ -52,24 +52,24 @@ disqusShortname = ""
       url = "projects/background"
 
     [[params.navigation.links]]
-      name = "Projects"
-      url = "projects"
+      name = "Project 1: GDP Comparisons"
+      url = "projects/project2/homework3"
 
-  #  [[params.navigation.links]]
-   #   name = "Elements"
-    #  url = "elements.html"
+    [[params.navigation.links]]
+      name = "Project 2: M&A Investment Strategy"
+     url = "projects/project3/DataAnalysisvF"
 
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
     # code below if you need more links. Buttons work in the same way.
-    # [[params.navigation.links]]
-    #    name = "NameOfLink"
-    #    url = "UrlOfLink"
+    [[params.navigation.links]]
+      name = "Project 3: Airbnb Price Analysis - Mexico city"
+      url = "projects/project4/airbnb"
 
     # Button Style 1
-   [[params.navigation.button1]]
-     name = "Get Started"
-     url = "projects"
+   #[[params.navigation.button1]]
+    # name = "Get Started"
+     #url = "projects"
 
     # Button Style 2
    # [[params.navigation.button2]]
