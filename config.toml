@@ -107,7 +107,7 @@ disqusShortname = ""
       title = "M&A Investment Strategy"
       subtitle = "Investment Strategy Project"
       image = "stock.jpg"
-      url = "projects/DataAnalysisvF"
+      url = "projects/DataAnalysisvF.Rmd"
 
     [[params.tiles.showcase]]
         title = "AirBnB Price Analysis"
