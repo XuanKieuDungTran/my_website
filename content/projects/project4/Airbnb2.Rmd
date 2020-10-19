@@ -1,16 +1,15 @@
 ---
-title: "Airbnb Price Analysis"
-date: '2020-10-01T21:28:43-05:00'
-description: Airbnb Mexico City - Price analysis
-draft: no
-image: logo.jpg
-keywords: ''
-slug: AirBnB Price Analysis
 categories:
-- ''
-- ''
+- ""
+- ""
+date: '2020-10-01T21:28:43-05:00'
+description: "Airbnb Mexico City - Price analysis"
+draft: false
+image: logo.jpg
+keywords: ""
+slug: Airbnb2
+title: Airbnb Price Analysis
 ---
-
 
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(

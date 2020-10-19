@@ -1,15 +1,16 @@
 ---
-title: "M&A Investment Strategy - Group 23"
-date: '2020-10-01T21:28:43-05:00'
-description: Analysis of Merger Arbitrage
-draft: no
-image: stock.jpg
-keywords: ''
-slug: Invesment Fundamentals
 categories:
-- ''
-- ''
+- ""
+- ""
+date: '2020-10-01T21:28:43-05:00'
+description: "Analysis of Merger Arbitrage"
+draft: false
+image: stock.jpg
+keywords: ""
+slug: DataAnalysisvF
+title: Investment Strategy Project
 ---
+
 
 Our study group has built financial models to test the effectiveness of Merger Arbitrage.
 

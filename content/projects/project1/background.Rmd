@@ -1,15 +1,15 @@
 ---
-title: "Background and Education"
-date: '2020-10-01T21:28:43-05:00'
-description: About me
-draft: no
-image: haiphong.jpg
-keywords: ''
-slug: Biography
 categories:
-- ''
-- ''
+- ""
+- ""
+date: '2020-10-01T21:28:43-05:00'
+description:  "About me"
+image: haiphong.jpg
+keywords: ""
+slug: background
+title: Biography
 ---
+
 
 # Background
 
