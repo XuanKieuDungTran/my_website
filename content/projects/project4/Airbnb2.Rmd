@@ -7,7 +7,7 @@ description: "Airbnb Mexico City - Price analysis"
 draft: false
 image: logo.jpg
 keywords: ""
-slug: Airbnb2
+slug: airbnb
 title: Airbnb Price Analysis
 ---
 
