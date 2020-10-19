@@ -67,9 +67,9 @@ disqusShortname = ""
     #    url = "UrlOfLink"
 
     # Button Style 1
-  #  [[params.navigation.button1]]
-     # name = "Get Started"
-    #  url = "blogs"
+   [[params.navigation.button1]]
+     name = "Get Started"
+     url = "projects"
 
     # Button Style 2
    # [[params.navigation.button2]]
@@ -95,25 +95,25 @@ disqusShortname = ""
       title = "Biography"
       subtitle = "Background and Education"
       image = "haiphong.jpg"
-      url = "projects/background"
+      url = "projects/project1/background"
 
     [[params.tiles.showcase]]
       title = "GDP Comparisons"
       subtitle = "Between Vietnam, China, and the UK"
       image = "GDP_plot3.jpg"
-      url = "projects/homework3"
+      url = "projects/project2/homework3"
 
     [[params.tiles.showcase]]
       title = "M&A Investment Strategy"
       subtitle = "Investment Strategy Project"
       image = "stock.jpg"
-      url = "projects/DataAnalysisvF.Rmd"
+      url = "projects/project3/DataAnalysisvF"
 
     [[params.tiles.showcase]]
         title = "AirBnB Price Analysis"
       subtitle = "for Mexico city"
       image = "logo.jpg"
-      url = "projects/Airbnb2"
+      url = "projects/project4/airbnb"
 
     #[[params.tiles.showcase]]
      # title = "Consequat"
@@ -186,8 +186,8 @@ disqusShortname = ""
 
   # Footer section
   [params.footer]
-   # enable = true
-    #copyright = "Company Name"
+   enable = true
+    copyright = "XKDTRAN"
 
     # Uses font awesome icons
    [[params.footer.social]]
