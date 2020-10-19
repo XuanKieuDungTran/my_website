@@ -1,14 +1,14 @@
 ---
-categories:
-- ""
-- ""
+title: "Biography"
 date: '2020-10-01T21:28:43-05:00'
-description:  "About me"
-draft: false
+description: About me
+draft: no
 image: haiphong.jpg
-keywords: ""
+keywords: ''
 slug: background
-title: Biography
+categories:
+- ''
+- ''
 ---
 
 

@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "https://xuan-kieu-dung-tran-portfolio.netlify.app/"
 languageCode = "en-us"
-title = "Portfolio website for Kostis Christodoulou"
+title = "Portfolio website for Xuan Kieu Dung Tran"
 theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
