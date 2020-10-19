@@ -38,7 +38,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "XUan Kieu Dung Tran"
-    # subtitle = "By HTML5 Up"
+    subtitle = "MFA2021"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"

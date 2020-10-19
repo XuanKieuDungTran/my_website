@@ -1,0 +1,179 @@
+---
+categories:
+- ""
+- ""
+date: '2020-10-01T21:28:43-05:00'
+description: "GDP Comparisons between Vietnam, China, and the UK"
+draft: false
+image: GDP_plot3.jpg
+keywords: ""
+slug: homework3
+title: GDP Comparisons
+---
+
+
+```{r, setup, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+
+```{r load-libraries, include = FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggthemes)
+library(GGally)
+library(readxl)
+library(here)
+library(skimr)
+library(janitor)
+library(broom)
+library(tidyquant)
+library(infer)
+library(openintro)
+library(tidyquant)
+```
+
+GDP growth is of utmost important to the prosperity of developing countries such as mine, Vietnam. For years the topic remains a core component of Vietnamese economic analysis. Thus, in this page I want to do my part, and attempt to construct a plot portraying changes GDP components of Vietnam in the last 5 decades, compared to China and the United Kingdom. 
+
+I have chosen China for comparison because the majority of Vietnamese economic policies in the last few decades have been based on that of China. Hence, Vietnamese economic trends are expected to mirror its neighbouring country.
+
+
+
+The GDP data we will look at is from the [United Nations' National Accounts Main Aggregates Database](https://unstats.un.org/unsd/snaama/Downloads), which contains estimates of total GDP and its components for all countries from 1970 to today. The file we will work with is [GDP and its breakdown at constant 2010 prices in US Dollars](http://unstats.un.org/unsd/amaapi/api/file/6).
+
+
+```{r read_GDP_data}
+# Let's load the data
+
+UN_GDP_data  <-  read_excel(here::here("data", "Download-GDPconstant-USD-countries.xls"), # Excel filename
+                sheet="Download-GDPconstant-USD-countr", # Sheet name
+                skip=2) # Number of rows to skip
+
+```
+
+ The first thing I need to do is to tidy the data, as it is in wide format and you must make it into long, tidy format. I will also express all figures in billions (divide values by `1e9`, or $10^9$), and rename the indicators into something shorter.
+
+
+```{r reshape_GDP_data}
+
+tidy_GDP_data  <-  UN_GDP_data %>%
+  
+  # Use pivot_longer to move all years into a single new column
+  pivot_longer(cols = 4:51, 
+               names_to = "year", 
+               values_to = "value") %>%
+  
+  # Display figures in billions (divide by '1e9')
+  mutate(value = value/1e9,
+         
+         # Rename indicators
+         IndicatorName = case_when(
+           IndicatorName == "Final consumption expenditure" ~ "consumption_final",
+           IndicatorName == "Household consumption expenditure (including Non-profit institutions serving households)" ~ "consumption_household",
+           IndicatorName == "General government final consumption expenditure" ~ "gov_spend",
+           IndicatorName == "Gross capital formation" ~ "GCF",
+           IndicatorName == "Gross fixed capital formation (including Acquisitions less disposals of valuables)" ~ "GFCF",
+           IndicatorName == "Changes in inventories" ~ "inventories_change",
+           IndicatorName == "Exports of goods and services" ~ "exports",
+           IndicatorName == "Imports of goods and services" ~ "imports",
+           IndicatorName == "Gross Domestic Product (GDP)" ~ "GDP",
+           IndicatorName == "Agriculture, hunting, forestry, fishing (ISIC A-B)" ~ "isic_A_B",
+           IndicatorName == "Mining, Manufacturing, Utilities (ISIC C-E)" ~ "isic_C_E",
+           IndicatorName == "Manufacturing (ISIC D)" ~ "isic_D",
+           IndicatorName == "Construction (ISIC F)" ~ "isic_F",
+           IndicatorName == "Wholesale, retail trade, restaurants and hotels (ISIC G-H)" ~ "isic_G_H",
+           IndicatorName == "Transport, storage and communication (ISIC I)" ~ "isic_I",
+           IndicatorName == "Other Activities (ISIC J-P)" ~ "isic_J_P",
+           IndicatorName == "Total Value Added" ~ "total_value"),
+         
+         # Change year to numeric
+         year = as.numeric(year))
+
+# Let us compare GDP components for these 3 countries
+country_list <- c("United States","India", "Germany")
+```
+
+
+Now, let's get started with the plot
+
+```{r GDP plot}
+
+# Make a data frame listing countries to compare
+country_list2 <- c("Viet Nam","China", "United Kingdom")
+
+GDP_plot3 <- tidy_GDP_data %>%
+  # Use pivot_wider to have indicators displayed as columns
+  pivot_wider(names_from = IndicatorName, values_from = value) %>%
+  
+  # Create new columns showing Net Exports
+  mutate(net_exp = exports - imports) %>%
+  
+  # Use pivot_longer to change data back to long format
+  pivot_longer(!c(1,2,3,11), names_to = "IndicatorName", values_to = "value") %>%
+  
+  # Calculate variables as percentage of total GDP
+  mutate(proportion = (value)/(GDP)) %>%
+  
+  # Filter for required countries and indicators only
+  filter(Country == country_list2,
+         IndicatorName %in% c("gov_spend", "GCF", "consumption_household", "net_exp")) %>%
+  mutate(IndicatorName = factor(IndicatorName, 
+                                levels = c("gov_spend", "GCF", "consumption_household", "net_exp"),
+                                labels = c("Government Expenditure", "Gross capital formation", "Household Expenditure", "Net Exports"))) %>%
+  
+  # Plot the graph, stating axes variables, and colour-grouping by country within each facet
+  ggplot(aes(x = year, y = proportion, colour = IndicatorName, na.rm = TRUE)) +
+  
+  # Set plot type to geom_line and specify size of lines
+  geom_line(size = 1) +
+  
+  # Set grid lines for both axes 
+  scale_y_continuous(limits = c(-0.1, 1), 
+                     minor_breaks = seq(from = (0), to = 1, by = 0.1), 
+                     breaks = seq(from = (0), to = 1, by = 0.2),
+                     labels = scales::percent) +
+  scale_x_continuous(breaks = seq(from = 1970, to = 2017, by = 10), 
+                     minor_breaks = NULL) +
+  
+  # Choose theme
+  theme_bw() +
+  
+  # Facet by country
+  facet_wrap(~Country) +
+  
+  # Set labels and titles
+  labs(title = "GDP and its breakdown at constant 2010 prices in US Dollars",
+       x = "",
+       y = "proportion",
+       colour = "Component of GDP") 
+
+# Save to resize plot
+ggsave("GDP_plot3.jpg", 
+       width = 33, 
+       height = 18, 
+       units = "cm")
+```
+
+```{r display}
+# Display plot
+knitr::include_graphics(here::here("GDP_plot3.jpG"), error = FALSE)
+```
+
+
+**Analysis**
+
+As Vietnam and China both experienced rapid growth at around the same time, their economic trends have been similar: fluctuating net exports, stable government spending, falling household expenditure, and growing business investment (all relative to GDP).  Net exports has been fluctuating because both its drivers are large and volatile: high internal demands for imports of luxury and capital goods, as well as huge external demands for their exports of low-cost consumer goods. The latter is also the main factor prompting the observed trend of rocketing business investments. Meanwhile, stable government expenditure can be credited to their politically stability, coherent economic objectives, and distinctly centralised governments. Finally, declining consumption can be explained by their rocketing income per capita, and distinctive cultural characteristics which encourage a high marginal propensity to save.
+
+The UK, on the other hand, experienced industrialisation much earlier and had been a developed country since the commencement of the period. Thus, its components of GDP moved in different directions compared to Vietnam and China. Relative to GDP, there had been a more gradual increase in gross capital formation and consumption, as well as a slight decrease in net exports and government spending.
